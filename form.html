@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <title>Form</title>
+</head>
+<body style="background-color: rgb(219, 219, 219); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+    <nav>
+        <div class="kiri">
+          <img src="assets/images/logo.png" id="image" />
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <div class="kanan">
+          <a href="form.html"> Contact Me</a>
+        </div>
+      </nav>
+<div style="width: 75%; box-shadow: 0 0 30px #888888; margin : 10px auto; padding-top: 1px;
+            padding-bottom: 1px; background-color: #ffffff; border-radius: 15px;">
+    <div style="width: 30%; margin: 20px auto; ">
+        <h1 style="text-align: center;">GET IN TOUCH</h1>
+    <form action="">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" style="width: 100%; box-sizing: border-box; margin-top: 5px; margin-bottom: 15px; padding: 7px; box-sizing: border-box; box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; border-radius: 4px;">
+        <label for="email">Email</label>
+        <input style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 7px; box-sizing: border-box;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; border-radius: 4px;" type="text" id="email">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 7px; box-sizing: border-box;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; border-radius: 4px;">
+        <label for="subject">Subject</label>
+        <select id="subject" style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 7px;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none;border-radius: 4px;">
+            <option>Fullstack</option>
+            <option>Backend</option>
+            <option>Fullstack</option>
+        </select>
+        <label for="keterangan">Your Massage</label>
+        <textarea id="keterangan" cols="30" rows="5" style="width: 100%; margin-top: 5px; margin-bottom: 10px; padding: 7px; box-sizing: border-box;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; resize: none;border-radius: 4px;"></textarea>
+    <div style="width: 100%; display: flex; justify-content: flex-end;">
+        <button type="button" onclick="ambilData()" style="width: 100px; background-color: rgb(36, 28, 28); color: white; border-radius: 9px; cursor: pointer; ">
+            Submit
+        </button>
+    </div>
+    </form>
+</div>
+</div>
+</body>
+</html>

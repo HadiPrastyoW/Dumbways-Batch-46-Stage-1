@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+.containerluar {
+                width: 75%;
+                background-color : white;
+                margin: 30px auto;
+                box-shadow: 0 0 30px #888888;
+                border-radius: 10px;
+                padding: 40px 0;
+}
+.containertengah {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+}
+.sosmed{
+    font-size: 25px;
+    display: flex;
+}
+.pembungkus {
+        width: 400px;
+}
+.gambar {
+    width : 250px;
+    box-shadow: 0 0 20px black;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+}
+.head {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.coba {
+    margin-top: 5px;
+    font-size: 15px;
+}
