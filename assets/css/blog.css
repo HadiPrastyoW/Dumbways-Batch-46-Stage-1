@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+}
+
+.blog-form {
+  width: 80%;
+  margin: 30px auto;
+  display: flex; 
+  justify-content: center;
+  box-shadow: 0 0 30px #708090;
+}
+
+.form-container {
+  width:90%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-form .form-container form label {
+  font-weight: 500;
+  font-size: large ;
+}
+
+.form-container form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+a {
+  color: black;
+  text-decoration:none;
+}
+
+h1 {
+  margin-top: 8px;
+}
+
+.form-container form input,textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 8PX;
+  height: 30PX;
+  border-radius: 4px;
+  resize: none;
+  background: #f4f3f3;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.form-container form textarea {
+  height: 100px;
+}
+
+.blog-form .form-container form .date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-form .form-container form .date input {
+  width: 33%;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  
+}
+
+.blog-form .form-container form .date label {
+  margin: auto 0;
+  padding-bottom: 19px;
+}
+
+.check1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-form form .check {
+  width: 20%;
+  height: 20px;
+}
+
+.blog-form form .input-blog-image-group {
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.blog-form form .input-blog-image-group label p {
+  font-size: 15px;
+}
+
+.blog-form form .input-blog-image-group label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.button-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blog-form .button-group button {
+  height: 30px;
+  background-color:	rgba(42, 42, 42, 0.945) ;
+  width: 60px;  
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.btn-group {
+  margin-top: 5px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.btn-edit {
+  height: 20px;
+  background-color:	rgba(42, 42, 42, 0.945) ;
+  width: 40%;  
+  border-radius: 5px;
+  border: none;
+  color: white;
+
+}
+
+.btn-post {
+  height: 20px;
+  background-color:	rgba(42, 42, 42, 0.945) ;
+  width: 40%;  
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+
+.blog hr {
+  border: 1px solid #dbdbdb;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blog-list {
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-list-item {
+  width: 30%;
+  box-shadow: 0 0 22px #708090;
+  overflow: hidden;
+  padding: 6px;
+  margin-right: 30px;
+}
+.blog-list .blog-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+}
+
+.blog-list .blog-list-item h1 {
+  font-size: 20px;
+  font-weight: 250px;
+}
+.blog-list .blog-list-item .detail-blog-content {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.blog-list .blog-list-item .content-p, p {
+  width: 100%;
+  font-size: 13px;
+}
+
+.logo-tech {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+
+  margin: 20px 0px;
+}
+.logo-tech img{
+  margin-right: 20px;
+  width: 30px;
+}
+
+/* main blog-detail */
+
+h1 {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.img-text {
+  display: flex;
+  margin: 0px 120px;
+}
+
+.img-text img {
+  width: 650px;
+}
+
+.duration {
+  margin: 20px 0px 70px 70px;
+}
+
+
+.duration{
+  align-items: center;
+}
+
+.duration h3 {
+  margin: 0px;
+}
+
+.duration label {
+  margin-left: 10px;
+}
+
+.calendar,
+.time {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.duration img {
+  display: grid;
+  width: 30px;
+}
+.tech {
+  margin: 40px 0px 0px 70px;
+}
+
+.tech img {
+  width: 30px;
+  height: auto;
+}
+
+.tech-img {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 10px 100px;
+}
+.tech label {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.nodejs,
+.nextjs,
+.reactjs,
+.typescript {
+  display: flex;
+  align-items: center;
+}
+
+.project-desc {
+  display: flex;
+  align-items: center;
+}
+.project-desc p {
+  text-align: justify;
+  font-size:20px;
+  margin: 50px 120px;
+}
+
+/* responsive */
+@media only screen and (max-width: 550px) {
+
+  .blog-list-item {
+    width: 44%;
+    margin-right: 20px;
+    justify-content: center;
+  }
+  .check1 {
+    width: 68%;
+  }
+}

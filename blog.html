@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left">
+        <img src="assets/images/logo.png" id="image" />
+        <ul>
+          <li class="nav-list">
+            <a href="index.html" class="active">Home</a>
+          </li>
+          <li class="nav-list">
+            <a href="blog.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right" id="nav-list">
+        <a href="form.html"> Contact Me</a>
+      </div>
+      <div class="nav-right" id="barsmenu">
+        <button onclick="openHumberger()" style="background-color: transparent; border: none; cursor: pointer;">
+          <i class="fa-solid fa-bars"style="color: white;"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="humberger-nav-container" id="humberger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="blog.html" class="humberger-nav-active">My Project</a>
+      <a href="form.html">Contact Me</a>
+    </div>
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="getData(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" />
+            </div>
+            <div class="date">
+              <label for="input-blog-title">Start Date</label>
+              <input style="margin-right: 10px;" type="date" id="input-blog-start" />
+              <label for="input-blog-title">End Date</label>
+              <input type="date" id="input-blog-end" />
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea style="width: 100%; margin-bottom: 9px;" id="input-blog-content"></textarea>
+            </div>
+              <label for="input-blog-tecnologies">Tecnologies</label>
+            <div class="check1">
+              <input class="check" type="checkbox" id="nodejs">Node Js
+              <input class="check" type="checkbox" id="nextjs">Next Js
+              <input class="check" type="checkbox" id="reactjs">React Js
+              <input class="check" type="checkbox" id="typescript">TypeScript
+            </div>
+
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Choose</p>
+                  <img src="" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div class="blog-list" id="contents">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image" style="background-image: url(assets/images/chat.jpeg);">
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank"
+                >6 MOBIL HYBRID TERBARU - 2023</a
+              >
+            </h1>
+            <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Hadi Prastyo Wicaksono
+            </div>
+            <div class="content-p">
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+            <div class="logo-tech">
+              <img src="assets/images/node.js.png" alt="nodeJS">
+              <img src="assets/images/next.js.png" alt="nextJS">
+              <img src="assets/images/react.js.png" alt="reactJS">
+              <img src="assets/images/typescript.png" alt="typescript">
+            </div> 
+          </div>
+            <div style="float: right;">
+              <p style="  font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/navbar.js"></script>
+  </body>
+</html>
