@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Testimoni</title>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/testimoni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Open Navbar -->
+    <nav>
+        <div class="left">
+          <img src="assets/images/logo.png" id="image" />
+          <ul>
+            <li class="nav-list">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-list">
+              <a href="blog.html">My Project</a>
+            </li>
+            <li class="nav-list">
+                <a href="blog.html"  class="active">My Testimoni</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right" id="nav-list">
+          <a href="form.html"> Contact Me</a>
+        </div>
+<!-- close navbar -->
+<!-- open humberger menu -->
+        <div class="nav-right" id="barsmenu">
+          <button onclick="openHumberger()" style="background-color: transparent; border: none; cursor: pointer;">
+            <i class="fa-solid fa-bars" style="color: white;"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="humberger-nav-container" id="humberger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="blog.html">My Project</a>
+        <a href="blog.html" class="humberger-nav-active">My Testimoni</a>
+        <a href="form.html">Contact Me</a>
+      </div>
+<!-- close humberger menu -->
+<!-- content testimoni -->
+    <div class="container">
+        <h1>My Testimoni</h1>
+                <!-- Open rating -->
+                <div class="container-rating">
+                  <h2> Rating By Star</h2>
+                  <div class="rating">
+                      <button class="rating-btn" onclick="allTestimonials()">
+                          All
+                      </button>
+                      <button class="rating-btn" onclick="filterTestimonials(1)">
+                          1 <i class="fa-solid fa-star"></i>
+                      </button>
+                      <button class="rating-btn" onclick="filterTestimonials(2)">
+                          2 <i class="fa-solid fa-star"></i>
+                      </button>
+                      <button class="rating-btn" onclick="filterTestimonials(3)">
+                          3 <i class="fa-solid fa-star"></i>
+                      </button>
+                      <button class="rating-btn" onclick="filterTestimonials(4)">
+                          4 <i class="fa-solid fa-star"></i>
+                      </button>
+                      <button class="rating-btn" onclick="filterTestimonials(5)">
+                          5 <i class="fa-solid fa-star"></i>
+                      </button>
+                  </div>
+              </div>
+              <!-- rating end -->
+        <section class="testimonials" id="testimonials">
+            <!-- <div class="testimonial">
+                <img src="assets/profile/profile.png" class="profile-testimonial" />
+                <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget lectus eu
+                    libero venenatis gravida eget vel odio."</p>
+                <p class="author">- Surya Elidanto</p>
+            </div> -->
+        </section>
+    </div>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/testimoni.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <title>Form</title>
+</head>
+<body style="background-color: rgb(219, 219, 219); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold;">
+  <nav>
+    <div class="left">
+      <img src="assets/images/logo.png" id="image" />
+      <ul>
+        <li class="nav-list">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-list">
+          <a href="blog.html">My Project</a>
+        </li>
+        <li class="nav-list">
+          <a href="testimoni.html">My Testimoni</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right" id="nav-list">
+      <a href="form.html"  class="active"> Contact Me</a>
+    </div>
+    <div class="nav-right" id="barsmenu">
+      <button onclick="openHumberger()" style="background-color: transparent; border: none; cursor: pointer;">
+        <i class="fa-solid fa-bars"style="color: white;"></i>
+      </button>
+    </div>
+  </nav>
+  <div class="humberger-nav-container" id="humberger-nav-container">
+    <a href="index.html">Home</a>
+    <a href="blog.html">My Project</a>
+    <a href="form.html" class="humberger-nav-active">Contact Me</a>
+  </div>
+<div style="width: 75%; box-shadow: 0 0 30px #888888; margin : 10px auto; padding-top: 1px;
+            padding-bottom: 1px; background-color: #ffffff; border-radius: 15px;">
+    <div style="width: 40%; margin: 20px auto; @media only screen and (max-width: 550px) { width: 50%;}">
+        <h1 style="text-align: center;">GET IN TOUCH</h1>
+    <form action="">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" style="width: 100%; box-sizing: border-box; margin-top: 5px; margin-bottom: 15px; padding: 7px; box-sizing: border-box; box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; border-radius: 4px;">
+        <label for="email">Email</label>
+        <input style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 7px; box-sizing: border-box;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; border-radius: 4px;" type="email" id="email">
+        <label for="phone">Phone Number</label>
+        <input type="number" id="phone" style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 7px; box-sizing: border-box;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; border-radius: 4px;">
+        <label for="subject">Subject</label>
+        <select id="subject" style="width: 100%; margin-top: 5px; margin-bottom: 15px; padding: 7px;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none;border-radius: 4px;">
+            <option>Fullstack</option>
+            <option>Backend</option>
+            <option>Fullstack</option>
+        </select>
+        <label for="information">Your Massage</label>
+        <textarea id="information" cols="30" rows="5" style="width: 100%; margin-top: 5px; margin-bottom: 10px; padding: 7px; box-sizing: border-box;box-shadow: 0 2px 4px rgb(96, 96, 96); border: none; resize: none;border-radius: 4px;"></textarea>
+    <div style="width: 100%; display: flex; justify-content: flex-end;">
+        <button type="button" onclick="GetData()" style="width: 100px; background-color: rgb(36, 28, 28); color: white; border-radius: 9px; cursor: pointer; ">
+            Submit
+        </button>
+    </div>
+    </form>
+</div>
+</div>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/navbar.js"></script>
+</body>
+</html>
