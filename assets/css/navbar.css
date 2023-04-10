@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    background-color: rgba(42, 42, 42, 0.945);
+    height: 9vh;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav div.left{
+    padding-left: 90px;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type:none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left:  40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+a.active {
+    color: orangered;
+    font-weight: 700;
+}
+
+.right .active {
+    color: orangered;
+    font-weight: 700;
+    background-color: white;
+}
+
+nav .right a {
+    font-size: 14px;
+    padding: 5px 17px;
+    background-color: orangered;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.humberger-nav-container {
+    font-size: 24px;
+    display: none;
+}
+
+.humberger-nav-container a{
+    color: white;
+    background-color: #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.humberger-nav-container .humberger-nav-active {
+    background-color: orangered;
+}
+
+#barsmenu {
+    display: none;
+    color: white;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 550px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    #barsmenu {
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+    }
+}
